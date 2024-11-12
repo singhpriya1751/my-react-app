@@ -1,0 +1,298 @@
+.main {
+  position: relative;
+  width: 100%;
+  height: 37rem;
+  overflow: hidden;
+}
+
+.main {
+  z-index: 1;
+  width: 70%;
+  /* Adjust the width as needed */
+  max-width: 400px;
+  /* Set a maximum width to avoid being too wide on larger screens */
+  margin: 2.5rem auto 0rem;
+  /* Center the form horizontally */
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(30, 20, 0, 0.2);
+  border: 0.1rem solid black;
+  height: 25rem;
+
+}
+
+.heading {
+  padding: 1rem 10rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  height: 8.7rem;
+  margin: 2rem auto;
+}
+
+.name {
+  width: 20rem;
+  height: 2.7rem;
+  background-color: #eaeaea;
+
+  margin-top: 1.3rem;
+  border-radius: 0.3rem;
+}
+
+.icon {
+  margin: 0.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.fields {
+  margin-top: 0.4rem;
+  width: 15rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 0.1rem black;
+}
+
+.member {
+  margin-left: 6rem;
+}
+
+.login {
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.login:hover {
+  color: red;
+}
+
+.btn {
+  width: 6rem;
+  height: 2.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 2rem 7rem 0 10rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.successMsg {
+  width: 20rem;
+  height: 13rem;
+  background-color: white;
+  font-size: 1rem;
+  margin: 2rem auto 0rem;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.tick {
+  font-size: 3rem;
+  color: green;
+  margin-top: 1rem;
+}
+
+.data {
+  margin: 1rem auto 0rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.okbtn:active {
+  background-color: rgb(133, 208, 133);
+}
+
+.errorMessage {
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-left: 3rem;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(242, 18, 18, 0.2);
+  border-radius: 8px;
+  margin-bottom: 5rem;
+}
+
+.closeErrorBtn {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+  margin: 0rem auto 0;
+  border: 0.2rem solid red;
+}
+
+
+.btn {
+  width: 6rem;
+  height: 2.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 1rem 7rem 0 10rem;
+  cursor: pointer;
+}
+
+.successMessage {
+  padding-top: 3rem;
+  width: 25rem;
+  height: 17rem;
+  background-color: white;
+  font-size: 1rem;
+  margin-top: -16rem;
+  margin-left: 1rem;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.okbtn {
+  width: 4rem;
+  height: 2rem;
+  margin: 1rem auto 0;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.errorMessage {
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  font-size: 1rem;
+  margin: 1rem auto 0rem;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(242, 18, 18, 0.2);
+  border-radius: 8px;
+}
+
+
+@media (max-width: 480px) {
+  .main {
+    width: 90%;
+    margin: 14% auto;
+    overflow-x: hidden;
+    height: 24rem;
+
+  }
+
+  .heading {
+    padding-left: 8.2rem;
+  }
+
+  .inputs {
+    width: 90%;
+    /* Adjust as needed */
+    margin: -1rem auto;
+    /* Adjust as needed */
+  }
+
+  .name {
+    width: 80%;
+    /* Adjust as needed */
+  }
+
+  .fields {
+    width: 70%;
+    /* Adjust as needed */
+  }
+
+  .member {
+    margin: 1.5rem auto 0rem;
+    text-align: center;
+    /* Adjust as needed */
+  }
+
+  .btn {
+    width: 40%;
+    /* Adjust as needed */
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+  }
+
+  .successMsg {
+    width: 50%;
+    margin: 5rem auto 0;
+    text-align: center;
+    height: auto;
+    margin-top: 30%;
+    padding-bottom: 8%;
+    margin-bottom: 35%;
+    overflow-y: hidden;
+  }
+
+
+  .errorMessage {
+    width: 50%;
+    text-align: center;
+    height: auto;
+  }
+
+  /* .successMessage {
+    padding-top: 1rem;
+    width: 50%;
+    margin-top: -15rem;
+  } */
+
+  .tick {
+    font-size: 2rem;
+  }
+
+  .okbtn {
+    width: 2rem;
+    font-size: x-small;
+    padding-top: 0%;
+    height: 1.1rem;
+  }
+
+  .data {
+    font-size: small;
+  }
+}

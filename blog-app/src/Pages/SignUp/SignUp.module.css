@@ -1,0 +1,242 @@
+/* Signup.module.css */
+.main {
+    height: 28rem;
+    width: 32%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 0.1rem solid black;
+  }
+  
+  .heading {
+    padding: 1.5rem 8rem 0 9rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
+  
+  .underline {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: black;
+    margin-left: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;
+    height: 12.9rem;
+    margin: 2rem auto;
+  }
+  
+  .name {
+    width: 20rem;
+    height: 2.7rem;
+    background-color: #eaeaea;
+    margin-top: 1.3rem;
+    border-radius: 0.3rem;
+  }
+  
+  .icon {
+    margin: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .fields {
+    margin-top: 0.4rem;
+    width: 15rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .member {
+    margin-left: 7rem;
+  }
+  
+  .login {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .login:hover {
+    color: red;
+  }
+  
+  .btn {
+    width: 6rem;
+    height: 2.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    margin: 1rem 7rem 0 9rem;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+  }
+  
+  .btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  .successMessage,
+  .errorMessage {
+    width: 20rem;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .successMessage {
+    background-color: #4caf50;
+    /* Green for success */
+    color: white;
+    margin-bottom: 7rem;
+  }
+  
+  .errorMessage {
+    background-color: #f44336;
+    /* Red for error */
+    color: white;
+  }
+  
+  .loginBtn {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: #4caf50;
+    background-color: white;
+    border: 0.1rem solid black;
+    margin: 0rem 5.5rem 0rem;
+  }
+  
+  .loginBtn:hover {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .closeErrorBtn {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    margin: 0rem 6rem 0rem;
+    border: 0.1rem solid black;
+  }
+  
+  .closeErrorBtn:hover {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .password {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 1.3rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .upper {
+      height: auto;
+  
+    }
+  
+    .main {
+      width: 90%;
+      margin: 6.5% auto;
+      overflow-x: hidden;
+    }
+  
+    .heading {
+      width: max-content;
+      font-size: 1.8rem;
+      margin-left: -1.3rem;
+    }
+  
+    .underline {
+      width: 6.4rem;
+      margin-left: 0rem;
+    }
+  
+    .inputs {
+      width: 90%;
+      margin: 2rem auto;
+    }
+  
+    .name {
+      width: 80%;
+    }
+  
+    .fields {
+      width: 70%;
+    }
+  
+    .member {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .btn {
+      width: 40%;
+      margin-left: 6.5rem;
+    }
+  
+    .successMessage {
+      margin-left: 22%;
+      margin-right: 0%;
+      width: 50%;
+      padding-left: 2%;
+      text-align: center;
+      height: auto;
+      margin-top: 30%;
+      padding-bottom: 8%;
+      margin-bottom: 35%;
+      overflow-y: hidden;
+    }
+    
+    .errorMessage{
+      margin-left: 24%;
+      margin-right: 0%;
+      width: 50%;
+      text-align: center;
+      height: auto;
+    }
+  
+    .password {
+      color: #f44336;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+  
+    .loginBtn {
+      margin-left: 25%;
+    }
+  
+    .closeErrorBtn {
+      width: 40%;
+      /* Adjust as needed */
+      margin: 0rem auto;
+      /* Adjust as needed */
+    }
+  }
